@@ -1,0 +1,18 @@
+﻿<Window x:Class="TechpoolUnleashed.Windows.VersionSelectionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TechpoolUnleashed.Windows"
+        mc:Ignorable="d"
+        Title="Select Automation Version" Height="201" Width="298" ResizeMode="NoResize" Topmost="True" Icon="/TechpoolUnleashed;component/Resources/sandboxtp32x32.png">
+    <Grid x:Name="MainGrid">
+        <ComboBox x:Name="ComboBox" HorizontalAlignment="Left" VerticalAlignment="Center" Width="180" Height="27" MaxDropDownHeight="65" IsReadOnly="True" SelectedIndex="0" Margin="10,0,0,0" IsDropDownOpen="True">
+            <ComboBoxItem Content="&lt;select game version&gt;"/>
+            <ComboBoxItem Content="UE4.27"/>
+            <ComboBoxItem Content="UE4.24 or older"/>
+            <ComboBoxItem Content="Other"/>
+        </ComboBox>
+        <Button x:Name="SelectButton" Content="Select" HorizontalAlignment="Left" Margin="200,0,0,0" VerticalAlignment="Center" Width="75"/>
+    </Grid>
+</Window>
