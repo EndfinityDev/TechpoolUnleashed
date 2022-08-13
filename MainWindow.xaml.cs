@@ -321,9 +321,9 @@ namespace TechpoolUnleashed
         private void CreateTechpoolMenu(DeserializedItemTable itemTable, object sender, RoutedEventArgs e)
         {
             ClearParameters();
-            var ct = itemTable.ContentTable;
+            Hashtable ct = itemTable.ContentTable;
             object ci;
-            var h = _techPoolGrid.Height;
+            double h = _techPoolGrid.Height;
             _techPoolGrid.Height *= 10;
             Int32 i = 0;
             foreach (var key in ct.Keys)

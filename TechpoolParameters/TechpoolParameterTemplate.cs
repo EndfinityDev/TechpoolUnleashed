@@ -106,9 +106,9 @@ namespace TechpoolUnleashed
 
                 #region Events
 
-                var slider = ParameterSlider;
-                var sliderLabel = ParameterDisplay;
-                var paramTitle = NameLabel;
+                Slider slider = ParameterSlider;
+                TextBox sliderLabel = ParameterDisplay;
+                Label paramTitle = NameLabel;
 
                 slider.Value = Parameter;
                 slider.ValueChanged += (object sender, RoutedPropertyChangedEventArgs<double> e) =>

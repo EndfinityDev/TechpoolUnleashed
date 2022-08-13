@@ -25,7 +25,7 @@ namespace TechpoolUnleashed.Collections
             this.PUID = puid;
         }
 
-        public string ToString()
+        public override string ToString()
         {
             return $"UID: {UID}, Name: {Name}, PUID: {PUID}";
         }
